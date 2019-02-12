@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CSS Practice</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+    <ul>
+      <li><a href="1.html">HTML 연습</a></li>
+      <li><a href="2.html">CSS 연습</a></li>
+      <li><a href="3.html">JavaScript 연습</a></li>
+    </ul>
+    <h2>CSS 연습</h2>
+    <h3>폴더/파일 만들기&태그</h3>
+    <p>일단 웹 폴더를 만듦. 여기에 html도 저장하고 이미지도 저장하고 함.
+    처음에 opne floder해서 웹폴더를 엶. flie이 아니라 folder를 먼저 열어야 함. 그러면 옆에 방금 만든 웹폴더가 뜸.
+    파일이름은 맘대로 정해도 되는데 .뒤에 html은 유지해야함. html은 확장자 이름. 한글로 따지면 hwp.
+    인터넷 키고 ctlr+O를 하거나 마우스로 끌어와서 만들고있는 html을 엶.
+    에디터에서 코딩하고 저장하고 웹 새로고침 해보면 웹이 업데이트됨.</P>
+    태그
+    옷에 붙어있는 태그: 옷을 설명함
+    코딩에 붙어있는 태그: 해당 글이 어떤 글인지 설명함(strong을 붙이면 중요하단 것처럼..)
+    꺽쇠에 태그 넣고 뒤에 슬래쉬꺽쇠로 태그 닫으면 됨
+    <strong>strong=글씨 진하게</strong>
+    <u>u=underine의 약자=밑줄</u>
+    <p>w3c 웹페이지(국제민간표준기구 웹페이지. 웹을 만드는 곳)가 어떤 코드로 만들어졌는지 보고싶다면 오른쪽클릭▷페이지 소스 클릭하면 어떤 html코드로 이루어졌는지 알 수 있음.
+    모르는 태그 나올 때 검색하자▷ex)html h1 tag
+    뜻 먼저 읽기보단 예제 카피해서 에디터로 갖고와보고▷추론으로 뭘까 생각해보기▷그 담에 뜻 읽어보기
+    h시리즈들 에디터로 갖고와보면 이렇게 뜸.</P>
+    <img src="html headings.png" width="80%">
+    <p>h=headings(제목)의 약자
+    글씨가 크고 굵게 나옴 숫자가 높아질수록 작아짐 줄바꿈이 됨
+    전세계 웹페이지 분석결과(어느 태그를 가장 많이 쓰는지. 웹페이지가 몇개의 태그로 이루어져있는지 등) 나타낸 사이트
+    https://www.advancedwebranking.com/html/
+    랭킹
+    head body html title meta div a script link img p span li ul br style h1 h2 input form strong h3 table tr td</p>
+    <h3>단락 만드는 태그</h3>
+    검색어 html new line tag
+    <br>br. 단순 둘 띄어쓰기. 여러번 쓸 수 있음. 단지 '줄바꿈'이라는 시각적의미만 갖고 있기 때문에 닫히는 태그 할 필요 없음.
+    검색어 html paragraph tag
+    <p>p. paragraph의 약자. 단락을 만드는 태그. 어디부터 어디까지 한 단락인지 표현할 수 있어서 열리는 태그와 닫히는 태그가 존재함.</p>
+    <p>br과 p 태그 둘다 결과값은 같지만 p태그가 더 좋음. 왜냐하면 p태그는 웹페이지를 정보로서 가치있게 만들기 때문. 시각적이 아니라 의미론적으로 단락을 표현할 수 있음.</P>
+    <p>p태그의 단점: br태그는 여백을 원하는 만큼 쓰면 되지만 p태그는 여백이 정해져 있음. 시각적으로 자유도가 떨어지지만 css로 보완</p>
+    <p style="margin-top:45px;">css사이에서 여백을 나타내는 태그 style적고 ="margin(여백)"도 적음. 위쪽에 여백을 주고 싶으니 -top도 적고 원하는 여백값 ex):45px;을 적음. p태그 옆에 적음.</p>
+    <h3>h4과 span style="font-size:16px&strong"의 차이</h3>
+    <h4>Practice</h4>
+    <strong><span style="font-size:16px">Practice</span></strong>
+    <p>겉보기엔 별 차이없지만 검색엔진에서 해당 검색어를 태그를 바탕으로 정보를 분석하기 때문에 h3은 제목으로 인식됨.
+    전혀 다른거임. 예쁘게 만든다고 태그의 기본을 무시해버리면 검색엔진 노출순위에서 밀려버림.</p>
+    <h3>이미지 넣는 법</h3>
+    <p>이미지를 웹페이지에 포함시킬 때 사용하는 태그: img=image의 약자.<br>태그의 이름만으로는 정보가 부족할 때가 있음. (여기서는 이미지 정보) 공학자들은 새로운 문법 출현시킴.
+    어떤 이미지인지 알려준 속성이 source인데 줄여서 src.
+    Unsplash같은 사이트에서 이미지 뽑아오세용 ~.~
+    뽑아온 이미지를 만들었던 웹 폴더에 넣고서 ""에다가 원하는 이미지의 이름+확장자명을 적어주면 웹브라우저는 저 위치에 이미지를 이미지로서 표현해 줌.</p>
+    <img src="html image.jpg" width="100%">
+    이미지가 너무 크면 조절 가능 width=""로 가능. 그냥 숫자를 적을 수도 있고 %를 적을 수도 있음.
+    src나 width는 '속성'이나 'attribute'라고 부름. 이 속성은 위치가 상관이 없음. 태그가 태그의 이름만으로 정보가 부족할 때 속성을 통해 더 많은 의미를 부과할 수 있게 됨.
+    <h3>부모태그와 자식태그&목차만들기</h3>
+    목차 목록 적음.<br>
+    <ul>
+      <li>Practice1</li>
+      <li>Practice2</li>
+      <li>Practice3</li>
+    </ul>
+    <ul>
+      <li>practice1</li>
+      <li>practice2</li>
+      <li>practice3</li>
+    </ul>
+    li=list(목록)의 약자.
+    윈도우 쓰는 사람은 ctrl키를 누르고 있는 상태에서 클릭을 하면 중복작성 가능. 커서 위치 잘 맞춰야함.
+    종류가 다른 목록을 구분하고자 할 때 li의 부모태그인 ul을 사용.(br을 써도 시각적으론 비슷하지만 정보값이 다르다.) 자식태그를 쉽게 구분하기 위해 드래그하고 tab키 누르면 조금 밀려남.
+    ul은 li가 어디서부터 어디까지 서로 연관된 항목인지 경계/그루핑을 짓기위한 부모태그. li는 반드시 ul을 갖고 ul은 반드시 li을 가짐.
+    <h4>ol&table: 숫자&표 적기</h4>
+    ul(unordered list)을 ol(ordered list)로 바꾸면 자동으로 숫자가 넘버링 됨. ul에 비해 ol은 많이 쓰지 않음.
+    <ol>
+      <li>practice</li>
+      <li>practice</li>
+      <li>practice</li>
+    </ol>
+    표는 영어로 table. 표는 li와는 다르개 3대가 같이 다님. table. tr(table row). td(tbale cell).
+    <table>
+      <tr>
+        <td>head</td>
+        <td>98.1%</td>
+      </tr>
+      <tr>
+        <td>body</td>
+        <td>97.9%</td>
+      </tr>
+      <tr>
+        <td>html</td>
+        <td>97.9%</td>
+      </tr>
+    </table>
+    <h3>문서의 구조와 슈퍼스타들</h3>
+    <h4>title: 파일명 제목 해결하는 법</h4>
+    위에 원하는 제목(WEB Practice)을 title이라는 태그로 감싸줌. 그러면 웹이름 나오는 칸에 해당 제목이 뜸.
+    웹페이지의 제목을 사용자에게 명시적으로 알려줄 수 있을 뿐만 아니라 검색엔진은 타이틀을 책으로 따지면 책 표지쯤으로 여김.
+    웹페이지를 만들 때 타이틀을 쓰지않는건 검색엔진 노출 면에서 굉장히 손해가 됨.
+    <h4>meta: 깨짐 방지용</h4>
+    <P>에디터에 적을 때와 출력된 결과가 다를 수 있음. 컴퓨터는 정보를 0or1로 저장하고 그 0과 1을 어떻게 저장할지에 대한 약속들이 존재하는데, 그 약속 중 하나가 utf8.
+    <br>우리가 작성한 파일을 웹브라우저에서 열 때에도 utf8로 열어야 문제가 해결 됨.
+    <br>이 문서를 열 때는 utf8로 열렴.이라는 명령어가 필요하다.</p>
+    <p>meta charset="utf-8"
+    <br>character는 문자라는 뜻. set는 규칙이란 뜻. = utf-8로 문서를 읽어라라는 명령.
+    <br>(내 컴퓨터에선 잘 열린다... 일단 이것도 위에 적어놔야함.)
+    <br>title과 meta과 그 밑의 코드들은 차이점이 있음. 그 밑의 코드들은 본문이고, title meta는 본문을 설명하기 위한 글.</p>
+    <h4>head와 body: 본문 묶기</h4>
+    공학자들이 본문은 body로 묶기로 약속함. 그렇게 해야함. body를 설명하는 태그는 head로 묶기로 약속함. 닫는 것도 꼭꼭 해야함.
+    즉 html에 있는 모든 태그는 head나 body태그 아래에 놓이게 됨. 그런 점에서 상당히 고위직 태그임.
+    <h4>html</h4>
+    이 고위층 태그를 감싸는 단 하나의 최고위층 태그
+    <h4>!doctype html</h4>
+    html위에 관용적으로 !doctype html이라고 적어줌 (이 문서는 html에 있다라는 뜻.)
+    <h3>a: 태그의 제왕</h3>
+    현재 html은 150여개의 태그로 이루어져있지만 이들 모두 여기 아래에 있음.
+    검색엔진은 이 태그 덕분에 웹페이지를 발견하고 검색결과를 만들 수 있음. 이 태그가 없다면 검색엔진은 존재하지 않음.
+    html(hyper text markup language)에서 hypertext가 바로 이 태그를 의미함.
+    a=anchor의 약자. 정보의 바다에 정박한다라는 의미.
+    a는 링크를 의미.
+    검색어 html specification(설명서)
+    링크를 걸고 싶은 곳에 a태그를 감싸면 됨. 그리고 리로드하면 링크가 안 걸림. 왜? 정보가 부족하니까.
+    <br>[<a href="https://www.w3.org/" target="_blank" title="W3C">W3C</a>(영어: World Wide Web Consortium, 축약형은 영어: WWW 또는 W3)는 월드 와이드 웹을 위한 표준을 개발하고 장려하는 조직으로 팀 버너스 리를 중심으로 1994년 10월에 설립되었다. W3C는 회원기구, 정직원, 공공기관이 협력하여 웹 표준을 개발하는 국제 컨소시엄이다. W3C의 설립취지는 웹의 지속적인 성장을 도모하는 프로토콜과 가이드라인을 개발하여 월드 와이드 웹의 모든 잠재력을 이끌어 내는 것이다.]
+    hypertext(링크)의 약자 h. reference(웹브라우저야. 이 링크는 이 값을 참조해의 의미)의 약자 ref ▷ href
+    <br><a href="https://validator.w3.org/unicorn/?ucn_lang=ko">W3C 통합 검사기</a>
+    <h4>기타 참조</h4>
+    클릭했을 때 새탭이 열리게 하고 싶을 때: target="_blank"
+    링크를 클릭하기 전에 무슨 링크인지 알려주고 싶다: title=""
+    <h3>웹사이트 완성</h3>
+    <h4>목표</h4>
+    맨 위에 로고처럼 이미지 넣어서 클릭하면 웰컴페이지 나오도록 하고
+    html을 클릭하면 1.html
+    CSS를 클릭하면 2.html
+    JavaScript를 클릭하면 3.html이 나오도록 함.
+    <h4>과정</h4>
+    상단에(body밑)가장 큰 제목을 적고 h1으로 묶음.
+    WEB과 리스트 123을 a로 묶고 각각 index, 1, 2, 3 html에 링크를 걸어줌.
+
+
+
+
+
+  </body>
+</html>
